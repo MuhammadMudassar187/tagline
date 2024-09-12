@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Landing Page
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .container{
+            display: grid;
+            grid-template-rows: 1fr 0.00fr 0.00fr .01fr;
+            grid-template-columns: 1fr .001fr .001fr .1fr;
+            grid-template-areas: "box1 box1 box1 box1"
+            "box2 box2 box2 box2"
+            "box3 box3 box3 box3"
+            "box4 box4 box4 box4";
+            
+        }
+        .box1{
+            grid-area: box1;
+            background-color: rgb(255, 255, 255);
+           
+      
+        }
+        .box2{
+            grid-area: box2;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-basis: content;
+            justify-content: space-around;
+            margin-top: -923px;
+            
+            
+            
+        }
+        .box3{
+            grid-area: box3;
+         
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+            "main3 main3 main3 main3"
+            "main4 main4 main4 main4"
+           ;
+           
+            
+        }
+    
+       
+        .main3{
+            grid-area: main3;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: space-between;
+        }
+        .main4{
+            grid-area: main4;
+            background-color: rgb(255, 255, 255);
+        }
+       
+        .box4{
+            grid-area: box4;
+           
+            margin-top: -600px;
+           
+        }
+        #nav-bar{
+            display: inline-flex;
+            position: fixed;
+            background-color: rgb(255, 255, 255,0.2);
+        }
+        .nav{
+            margin-top: 40px;
+            display: flex;
+            flex-basis: content;
+            justify-content: space-evenly;
+           
+        }
+        
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+      .search{
+        margin-top: 40px;
+      }
+      .h1{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .flexbox{
+        display: flex;
+        justify-content:space-evenly;
+      }
+      .bocs1{
+        display: flexbox;
+       
+        height:300px;
+        width:200px;
+       border-radius: 6px;
+       text-align: center;
+       box-shadow: 2px 2px 2px 2px rgb(212, 212, 212);
+      }
+      .bocs2{
+        display: flexbox;
+       
+        height:300px;
+        width:200px;
+        border-radius: 6px;
+        text-align: center;
+        box-shadow: 2px 2px 2px 2px rgb(212, 212, 212);
+      }
+      .bocs3{
+        display: flexbox;
+       
+        height:300px;
+        width:200px;
+        border-radius: 6px;
+        text-align: center;
+        box-shadow: 2px 2px 2px 2px rgb(212, 212, 212);
+      }
+      .bocs1:hover{
+        border:5px solid rgb(0, 83, 236);
+      }
+      .bocs2:hover{
+        border:5px solid rgb(0, 83, 236);
+      }
+      .bocs3:hover{
+        border:5px solid rgb(0, 83, 236);
+      }
+      .video{
+        display: flex;
+        justify-content: space-evenly;
+        ;
+      }
+      #myvideo{
+        float: right;
+        margin-left: 630px;
+        box-shadow: 12px 12px solid rgb(155, 154, 154);
+        display: inline-flex;
+      }
+     
+      .with{
+        background-color: rgb(168, 168, 168, 0.5);
+        margin-left: 223px;
+        margin-top: -33px;
+        color: rgb(0, 140, 255);
+        margin-right: 234px;
+        border-radius:10px;
+      }
+      .features{
+        background-color: rgb(65, 65, 65);color: white;border:2px solid black;width:102px;text-align: center;margin-left: 43px;padding:5px;border-radius: 7px;
+      }
+      .features:hover{
+        background-color: rgb(9, 36, 192);
+        border:2px solid rgb(1, 44, 129);cursor: pointer;
+      }
+      .videotext{
+        margin-left: -1304px;
+      
+      }
+      
+         .body{
+          float: right;
+         
+          margin-top: -2200px;
+          margin-right: 700px;
+        transform: translate(3px);
+     
+        padding: 73px;
+       background-size: cover;
+       align-items: center;
+       visibility:hidden;
+         
+         }
+         .formcontainer{
+            background-color: rgb(112, 112, 112);
+            border:2px solid rgb(173, 173, 173);
+            width:430px;
+            margin-left: 474px;
+          
+         }
+         form{
+            text-align: center;
+            margin-top: 34px;
+         }
+         LABEL{
+         
+           margin-right: 23px;
+         }
+.Confirm{
+    margin-left: -53px;
+    margin-right: 23px;
+}
+    </style>
+    <script>
+      function show(){
+        let sign=document.getElementById("signup").onclick=form();
+        function form(){
+          document.getElementById("formshow").style.visibility="visible"
+        }
+        
+      }
+    </script>
+   
+</head>
+<body>
+  <section>
+    <div class="container">
+      
+        <div class="box1">
+            <nav id="nav-bar">
+                <li><img id="header-img" src="img\logo.jpg" height="100px" width="100px"></li>
+                <div class="nav">
+                <li><a href="#box2section" style="margin-right: 33px;">Product  <i class="fa-solid fa-angle-right"></i></a></li>
+                <li><a href="#pricing" style="margin-right: 33px;">Pricing</a></li>
+                <li><a href="#" style="margin-right: 33px;">Resources  <i class="fa-solid fa-angle-right"></i></a></li>
+            </div>
+           <form class="search" action ="index.php">
+            <input type="search" placeholder="search . . ." name="search">
+            <button type="check"><i class="fa-solid fa-magnifying-glass"></i></button>
+           </form>
+            </nav>
+           <input type="submit" value="Sign Up" id="signup" onclick="show()" style=" font-family:cursive;color:white;margin-left: 6px;border:2px solid  rgb(0, 89, 255);background-color: rgb(53, 122, 250);border-radius: 5px;padding: 5px;float:right;margin-top: 23px;">
+           <input type="submit" value="login" style="font-family:cursive;background:none;border-radius: 5px;padding: 5px;float:right;margin-top: 23px;">
+        </div>
+        <section style="margin-top: -450px;" id="box2section">
+        <div class="box2">
+            <div class="text1">
+                <h1 style="font-size: 40px; font-family:Arial, Helvetica, sans-serif;">Email Marketing<br><span style="color:rgb(0, 140, 255)">And beyond</span></h1>
+                <br>
+                <br>
+                <h1 class="h1">Get <span style="background-color: rgb(241, 241, 0);color:white">Growing</span></h1>
+                <br><br>
+                <p>An affordable, easy platform to send emails, grow your list, and automate communication.</p>
+            </div>
+            <div class="text2">
+                <img src="img\product.jpg">
+            </div>
+        </div>
+        <section>
+        <div class="box3">
+            <div class="main3">
+                <div>
+                    <img src="img\marketing.jpg">
+                </div>
+        
+              <div>
+                    <h1 style="font-size:40px;font-family: Verdana, Geneva, Tahoma, sans-serif;">Design beautiful campaigns</h1>
+                    <p>Easily create emails with our drag-and-drop builder or use our pre-designed templates that are impactful and relevant but most importantly save you time.</p>
+                    <h1  style="font-size:40px;">Smart segmentation</h1>
+                    <p>Engage with your audience effectively by segmenting. Improve your conversions or sales by targeting a smaller subset of your contacts to align content with exactly what they need.</p>
+                    
+                </div>
+            </div>
+            <div class="main4" id="pricing">
+                <h1 style="font-size: 55px;text-align: center;">Pricing</h1>
+                <div class="flexbox">
+                    <div class="bocs1"><h3>Free<br>
+                        Discover Brevo</h3><br><br>
+                    <h2 style="font-size: 45px;">$0</h2><br>
+                <div class="features">Read Features</div>
+                </div>
+                    <div class="bocs2"><h3>PRO<br>
+                        Discover Brevo</h3><br><br>
+                        <h2 style="font-size: 45px;">$9</h2><br>
+                        <div class="features">Read Features</div></div>
+                    <div class="bocs3"><h3>PRO<br>
+                        Discover Brevo</h3><br><br>
+                        <h2 style="font-size: 45px;">$20</h2><br>
+                        <div class="features">Read Features</div></div>
+                </div>
+            </div>  
+            <div class="video">
+                <video autoplay muted loop id="myvideo">
+                    <source src="img\What is Email Marketing_2.mp4" type="video/mp4">
+                </video>
+                
+            </div>
+            <div class="videotext">
+        
+              <div class="with">
+                <h1 style="font-size: 52px; font-family:Arial, Helvetica, sans-serif">Turn your knowledge into a new revenue stream</h1>
+                <p style="color: black;font-size: 30px;">Create immersive learning experiences with dynamic features like an AI-powered course creator, quizzes, certificates, premium newsletters and email subscriptions, in-house video hosting, and more. Everything you need to create, market, and monetize your knowledge under one roof.</p>
+                <ol>
+                    <li>&#x21E8 AI-powered course creator</li>
+                    <br> <br>
+                    <li>&#x21E8 Email & marketing automation</li>  <br><br>
+                    <li>&#x21E8 Premium newsletters</li> <br> <br>
+                    <li>&#x21E8 Seamless payment gateways</li>
+                   
+                </ol>
+              </div>
+            </div>
+        </div>
+       
+        <hr style="border:.3px solid rgb(119, 119, 119,0.3);margin-left: 65px;">
+        <br><br>
+        <div class="box4" style="display: inline-flex;text-align: center;justify-content: space-between;padding: 12px;margin-left: 140px;">
+          <li style="font-family: fantasy;font-size: 23px;">Get the GetResponse App
+            <br><br>
+            <a href="https://play.google.com/store/apps/details?id=com.implix.getresponse&utm_source=business-page&utm_campaign=footer"><i class="fa-brands fa-google-play" style="margin-right:22px;"></i></a>
+            <a href="https://apps.apple.com/us/app/getresponse-app/id479252055"><i class="fa-brands fa-app-store"></i></i></a>
+          </li>
+          <li style="font-family: fantasy;font-size: 23px;margin-left: 480px;">Follow us
+            <BR><BR>
+             <a href="https://www.facebook.com/GetResponse"><i class="fa-brands fa-facebook" style="margin-right:12px;"></i></a>
+             <a href="https://www.instagram.com/getresponse/"> <i class="fa-brands fa-instagram" style="margin-right:12px;"></i></a>
+              <a href="https://www.linkedin.com/company/getresponse"><i class="fa-brands fa-linkedin " style="margin-right:12px;"></i></a>
+              <a href="https://www.youtube.com/user/NewGetResponse"><i class="fa-brands fa-youtube"></i></a>
+          </li> 
+          
+          <li style="font-family: fantasy;font-size: 23px;margin-left: 480px;">Change the language
+            <br><br>
+            <select>
+              <option>English</option>
+              <option>Hindi</option>
+              <option>French</option>
+              <option>Urdu</option>
+            </select>
+          </li>
+     
+        </div>
+        </section>
+    </div>
+
+<section class="body" id="formshow" on>
+  <DIV class="formcontainer">
+      <form method="post" action="validform" onsubmit="validity()" >
+      <label for="Name">User Name</label><input type="text" id="name" name="name" placeholder="    input your name" required>  
+      <br><br> 
+     
+      <label for="password">Password</label><input type="password" id="password" name="password" placeholder="    type your password" required><img src="eye-solid.svg" id="eye" onclick="convert()" height="22px" width="22px" style="margin-right: -34px;">
+      <br><br>
+      <label for="Confirm" class="Confirm">Confirm Password</label><input type="password" id="confirm" name="password" placeholder="    Re-type your password" required>  
+      <br><br> 
+      <label for="email" style="margin-left: 23px;">Email</label><input type="email" name="text" id="email" placeholder="Type your email"><br><br>
+      <label for="Gender">Gender</label> 
+      <label for="Male">Male</label> 
+  <input type="radio" class="gender" value="Gender" name="Gender" style="margin-left: -23px;">
+  <label for="Female">Female</label>
+  <input type="radio" class="Gender" value="Gender" name="Gender"style="margin-left: -23px;">
+  <label for="Female">Other</label>
+  <input type="radio" class="Gender" value="Gender" name="Gender"style="margin-left: -23px;">
+  <br><br>
+  <labeL For="inform">Date of Birth</labeL>
+  <INPUT type="text" style="width: 23px;border-radius: 6PX;" placeholder="DD">
+  <INPUT type="text" style="width: 23px;border-radius: 6PX;"placeholder="MM">
+  <INPUT type="text" style="width: 43px;border-radius: 6PX;"placeholder="   YY">
+  <br><br>     
+  <LABEL FOR="admission">Admission Type</LABEL>
+  <label FOR="student">Student</label>
+  <input type="checkbox" name="admission" value="Study" style="margin-left: -23px;">
+  <label FOR="player">Player</label>
+  <input type="checkbox" name="admission" value="Study" style="margin-left: -23px;">
+  <label FOR="teacher">Teacher</label>
+  <input type="checkbox" name="admission" value="Study" style="margin-left: -23px;">
+  <br>
+  <br>
+  <labeL For="inform">Source of information</labeL>
+  <select>
+      <option>Facebook</option>
+      <option>Yoututbe</option>
+      <option>Twitter</option>
+      <option>Instagram</option>
+      <option>Linked In</option>
+  </select>
+  <br><br>
+  <input type="submit" onclick="hide()">
+      </form>
+      <br><br>
+  </DIV>
+  <script>
+    function hide(){
+      let form=document.getElementById("body").onclick=hidden();
+      function hidden(){
+        document.getElementById("formshow").style.visibility="hidden"
+      }
+    }
+  </script>
+  <script>
+      window.onsubmit = function validity(){
+          const alpa=document.getElementById("password").value;
+          const beta=document.getElementById("confirm").value;
+          const alparegex="3432";
+          if (alpa!==alparegex){
+              alert("password not match")
+              return false;
+          }
+          return true;
+  }
+  </script>
+  <script>
+      function convert(){
+          let a=document.getElementById("eye");
+          if(a.src.match("eye-slash-solid.svg")){
+              a.src="eye-solid.svg"
+          }
+          else{
+              a.src="eye-slash-solid.svg"
+          }
+          let pass=document.getElementById("password");
+          if(pass.type==="password"){
+              pass.type="text"
+          }
+          else{
+              pass.type="password"
+          }
+      }
+  </script>
+      </section>
+    </body>
+</html>
